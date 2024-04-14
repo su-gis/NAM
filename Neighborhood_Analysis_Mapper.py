@@ -64,7 +64,7 @@ def Directory_vis(param):
     
     print('To see your visualization, Click the URL below (or locate files):')
     print(url)
-    print('Please run ' + '"NAM_' + param['filename_suffix']+'/index.html"'+' to your web browser.')
+    #print('Please run ' + '"NAM_' + param['filename_suffix']+'/index.html"'+' to your web browser.')
     #print('Advanced options are available in ' +local_dir2 + 'NAM_' + param['filename_suffix']+'/data/GEO_CONFIG.js')
     print('Advanced options are available in ')  
     print(local_dir2 + 'NAM_' + param['filename_suffix']+'/data/GEO_CONFIG_' + param['filename_suffix']+'.js')
