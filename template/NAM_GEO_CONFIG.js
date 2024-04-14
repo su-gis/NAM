@@ -28,8 +28,8 @@ var HorizonalBarChart = false;                    //barchart: Z Score Means of E
 
 var Num_Of_Decimal_Places = 2;                             // default = 2
 
-var Map_width  = "420px";                                  // min 350px
-var Map_height = "410px";                                  // min 300px
+var Map_width  = "350px";                                  // min 350px
+var Map_height = "350px";                                  // min 300px
 
 
 /////////////////////////////////////////////////////////////////
