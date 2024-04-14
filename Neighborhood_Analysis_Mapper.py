@@ -28,18 +28,18 @@ from scipy import stats
 from IPython.core.display import display, HTML
 import geopandas as gpd
 ###Comment out below to run in local env#########################################
-#from jupyter_server import serverapp
+from jupyter_server import serverapp
 
 def Directory_vis(param):
     ###Comment out these to run in local env#########################################
     #Retrieve Server URL that Jupyter is running
-    #jupyter_envs = {k: v for k, v in os.environ.items() if k.startswith('JUPYTER')}
-    #temp_server = jupyter_envs['JUPYTER_INSTANCE_URL']
+    jupyter_envs = {k: v for k, v in os.environ.items() if k.startswith('JUPYTER')}
+    temp_server = jupyter_envs['JUPYTER_INSTANCE_URL']
     
     ##Define Paths for Visualization (Jupyter Lab)
-    #servers = list(serverapp.list_running_servers())
-    #servers1 = temp_server+servers[0]["base_url"]+ 'view'
-    #servers2 = temp_server+servers[0]["base_url"]+ 'edit'
+    servers = list(serverapp.list_running_servers())
+    servers1 = temp_server+servers[0]["base_url"]+ 'view'
+    servers2 = temp_server+servers[0]["base_url"]+ 'edit'
     #################################################################################
     
     cwd = os.getcwd()
@@ -50,8 +50,8 @@ def Directory_vis(param):
     local_dir2 = cwd  
     
     ###This is for CyberGISX. Uncomment two command lines below when you run in CyberGIX Environment
-    #local_dir1 = servers1 + cwd + '/'
-    #local_dir2 = servers2 + cwd + '/'
+    local_dir1 = servers1 + cwd + '/'
+    local_dir2 = servers2 + cwd + '/'
     #################################################################################
     
     #local_dir = os.path.dirname(os.path.realpath(__file__))
